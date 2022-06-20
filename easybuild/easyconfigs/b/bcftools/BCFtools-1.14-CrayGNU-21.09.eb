@@ -24,7 +24,7 @@ dependencies = [
     ('GSL', '2.7'),
 ]
 
-configopts = "--with-htslib=$EBROOTHTSLIB --enable-libgsl"
+configopts = "--with-htslib=$EBROOTHTSLIB --enable-libgsl --with-cblas=gslcblas"
 
 sanity_check_paths = {
     'files': ['bin/%s' % x for x in ['bcftools', 'plot-vcfstats', 'vcfutils.pl']],
